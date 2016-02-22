@@ -3,10 +3,10 @@
 
 from lxml import etree
 
-accidentes=etree.parse('accidentes.xml')
-raiz=accidentes.getroot()
-accidentes=raiz.findall("results/result")
+accidents=etree.parse('accidentes.xml')
+raiz=accidents.getroot()
+accidentes=raiz.findall("result/accidente")
 
 
 for a in accidentes:	
-	print a.find("type").text +"\n"+ a.find("reason").text +"\n"+ a.find("geometry/coordinates")
+	print a.find("type").text +"\n"+ a.find("reason").text +"\n"+ a.find("geometry/coordinates").text+"\n\n"
