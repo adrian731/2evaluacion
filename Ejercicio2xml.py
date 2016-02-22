@@ -8,9 +8,10 @@ raiz=accidents.getroot()
 accidentes=raiz.findall("result/accidente")
 
 
-teclado=raw_input( "Estamos tratando sobre accidentes. ¿Quiere buscar los que se han producido por un fallo mecánico o los que no?\nsí/no: ")
+teclado=raw_input( "Estamos tratando sobre accidentes. ¿Quiere buscar los que se han producido por un fallo mecánico o los que no?\nsi/no: ")
+fallo=find("falloMecanico").text
 for a in accidentes:
-	if upper.teclado == a.find("falloMecanico").text:
+	if teclado.upper == fallo:
 		print a.find("vehiculo/quantity").text
 		print "Pavimento: "+ a.find("estadoPavimento").text
 		print "Atmófera: "+ a.find("estadoAtmosfera").text
