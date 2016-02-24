@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
+#3.- Pedir una edad por teclado y buscar accidentes en los que haya implicados que tengan la 
+#edad introducida o menor. Mostrar la edad, el papel que ocupaba en el coche (conductor, acompañante) y el estado del afectado.
 from lxml import etree
 
 accidents=etree.parse('accidentes.xml')

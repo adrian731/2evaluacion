@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
+#Buscar el tipo, la razón y las coordenadas de todos los accidentes.
 from lxml import etree
 
 accidents=etree.parse('accidentes.xml')
