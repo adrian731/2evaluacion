@@ -5,7 +5,7 @@ Fichero XML= Accidentes de tráfico en Zaragoza.
 
 2.- Busca todos los accidentes que se hayan producido a causa de un fallo mecánico o los que no. (campo falloMecánico).Muestra la razón y en qué estado estaban el pavimento y la atmósfera.
 
-3.- Cuenta accidentes en los que aparezca algún afectado menor de 30 años.
+3.- Pedir una edad por teclado y buscar accidentes en los que haya implicados que tengan la edad introducida o menor. Mostrar la edad, el papel que ocupaba en el coche (conductor, acompañante) y el estado del afectado.
 
 4.- Introduce una ID de un accidente y que imprima qué tipo de vehículos hay implicados en el accidente y la cantidad de vehículos de cada tipo.
 
