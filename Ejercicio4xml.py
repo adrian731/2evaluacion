@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
+#Introduce una ID de un accidente y que imprima qué tipo de vehículos hay implicados en el accidente y la cantidad de vehículos de cada tipo.
 from lxml import etree
 
 accidents=etree.parse('accidentes.xml')

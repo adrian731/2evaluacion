@@ -11,6 +11,6 @@ accidentes=raiz.findall("result/accidente")
 teclado=raw_input( "Estamos tratando sobre accidentes. ¿Quiere buscar los que se han producido por un fallo mecánico o los que no?\nsi/no: ")
 for a in accidentes:
 	if teclado != a.find("falloMecanico"):
-		#print a.find("vehiculo/quantity").text
+		print a.find("vehiculo/vehiculo/quantity").text
 		print "Pavimento: "+ a.find("estadoPavimento").text
 		print "Atmófera: "+ a.find("estadoAtmosfera").text
