@@ -11,7 +11,8 @@ teclado=raw_input("Introduce la ID de un accidente: ")
 for a in accidentes:
 	if teclado == a.find("id").text:
 		tipos=a.findall("vehiculo/vehiculo/type")
-		for t in tipos:
-			print t.text
-		
-
+		cantidad=a.findall("vehiculo/vehiculo/quantity")
+		print "tipo\t cantidad"
+		for t,c in zip(tipos,cantidad):
+			print t.text,"\t"+ c.text
+			
