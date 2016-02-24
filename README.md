@@ -3,11 +3,11 @@ Fichero XML= Accidentes de tráfico en Zaragoza.
 
 1.- Buscar el tipo, la razón y las coordenadas de todos los accidentes.
 
-2.- Busca todos los accidentes que se hayan producido a causa de un fallo mecánico o los que no. (campo falloMecánico).Muestra cuántos vehículos hay implicados y en qué estado estaban el pavimento y la atmósfera.
+2.- Busca todos los accidentes que se hayan producido a causa de un fallo mecánico o los que no. (campo falloMecánico).Muestra la razón y en qué estado estaban el pavimento y la atmósfera.
 
 3.- Cuenta accidentes en los que aparezca algún afectado menor de 30 años.
 
-4.- Introduce una ID de un accidente y que imprima qué tipo de vehículos hay implicados en el accidente y el motivo.
+4.- Introduce una ID de un accidente y que imprima qué tipo de vehículos hay implicados en el accidente y la cantidad de vehículos de cada tipo.
 
 5.- -Introduce una fecha (YYYY-MM-DD) y haz un programa que te muestre qué accidentes se han dado en esa fecha, la dirección y las coordenadas del mismo.
 
