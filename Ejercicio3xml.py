@@ -10,10 +10,25 @@ raiz=accidents.getroot()
 accidentes=raiz.findall("result/accidente")
 
 teclado=int(raw_input("Introduce la edad máxima de un implicado en un accidente: "))
+afectados=accidents.findall("afectado/afectado")
 
-for a in accidentes:
-	if int(a.find("afectado/afectado/age").text) <= teclado:
-		print a.find("afectado/afectado/age").text +"\n"+ a.find("afectado/afectado/type").text +"\n"+a.find("afectado/afectado/status").text
-	else:
-		print "No hay accidentes con personas menores de: %s " % teclado
-		teclado=int(raw_input("Introduce otra edad máxima: "))
+for a in afectados:
+	if int("age") <=teclado:
+		print "edad\t"+age.text,"\nrol\t"+type.text,"\nestado\t"+status.text
+			
+
+
+
+
+
+
+
+
+
+
+#for a in accidentes:
+#	if int(a.find("afectado/afectado/age").text) <= teclado:
+#		print a.find("afectado/afectado/age").text +"\n"+ a.find("afectado/afectado/type").text +"\n"+a.find("afectado/afectado/status").text
+#	else:
+#		print "No hay accidentes con personas menores de: %s " % teclado
+#		teclado=int(raw_input("Introduce otra edad máxima: "))
