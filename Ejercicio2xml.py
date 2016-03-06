@@ -14,3 +14,5 @@ for a in accidentes:
 		print a.find("vehiculo/vehiculo/quantity").text +" Vehículo/s implicados." 
 		print "Pavimento: "+ a.find("estadoPavimento").text
 		print "Atmófera: "+ a.find("estadoAtmosfera").text +"\n"
+	else	
+		print "Error"

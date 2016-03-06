@@ -15,6 +15,8 @@ afectados=accidents.findall("afectado/afectado")
 for a in afectados:
 	if int("age") <=teclado:
 		print "edad\t"+age.text,"\nrol\t"+type.text,"\nestado\t"+status.text
+	else 
+		print "Error"
 			
 
 

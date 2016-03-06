@@ -11,4 +11,10 @@ accidentes=raiz.findall("result/accidente")
 
 
 teclado=raw_input("Introduce la fecha(YYYY-MM-DD: ")
+	fechas=findall("creationDate")
+	for f,a in zip(fecha,accidentes):
+		if f.text[0:10]== teclado:
+			print a.find("firstAddress").text+"\n"+a.find("secondAddress").text+"\n"+a.find("geometry/coordinates").text
+		else:
 
+			print "La fecha no es válida o no se encuentra en la base de datos"
