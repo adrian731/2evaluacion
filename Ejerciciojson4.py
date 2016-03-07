@@ -10,5 +10,5 @@ for t in trabajos["document"]["list"]:
 	for l in t["element"]["attribute"]:
 		if l["name"]=="FechaModificacion":
 			if l["valor"].split(" ")[0] == teclado:
-				if l["name"]=="Enlace al contenido":
+				if "Enlace al contenido" == l["name"]: 
 					print l["valor"]
