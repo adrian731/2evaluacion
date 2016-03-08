@@ -5,13 +5,14 @@ trabajo=open("trabajo.json","r")
 trabajos=json.load(trabajo)
 
 teclado=raw_input("Introduce un mes(MM): ")
-ofertas=[]
 encontrado=False
+contador=0
 for t in trabajos["document"]["list"]:
 	for l in t["element"]["attribute"]:
 		if l["name"]=="FechaModificacion":
-			if teclado == l["valor"][5:7] and 		if l["name"]=="Titulo_es":
-				ofertas.append(l)
+			if teclado == l["valor"][5:7]:
 				encontrado=True
-if encontrado=True
-print len(ofertas)
+				contador=contador + 1
+
+
+print contador
