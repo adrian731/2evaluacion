@@ -1,10 +1,16 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 #Programa que genere un fichero html con la siguiente información de las ofertas de trabajo.
+
 #<h1>titulo</h1>
 #<p>Descripción</p>
 #a href="Enlace al contenido"> Más información</a>
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 import json
+
 trabajo=open("trabajo.json","r")    
 trabajos=json.load(trabajo)
 
@@ -23,5 +29,3 @@ for t in trabajos["document"]["list"]:
 fich.write("</br></body></br></html>")
 
 fich.close()
-
-
